@@ -1,0 +1,38 @@
+lm_studio:
+  # base_url: "http://localhost:1234/v1/models"
+  base_url: "http://127.0.0.1:1234/v1"
+  api_key: "lm-studio"
+  chat_model: "meta-llama-3.1-8b-instruct"
+rag:
+  docs_dir: "./docs"
+  index_dir: "./rag_index"
+  embedding_backend: "sentence-transformers"
+  embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+  chunk_chars: 800
+  chunk_overlap: 80
+  top_k: 5
+pricing:
+  base_premium: 600.0
+  rules:
+    mvr_pts_per_point: 35.0
+    claims_per_event: 50.0
+    car_age_per_year: 8.0
+    urbanicity_uplift:
+      urban: 60.0
+      suburban: 30.0
+      rural: 0.0
+    annual_miles_uplift:
+      threshold1: 8000
+      uplift1: 0.0
+      threshold2: 12000
+      uplift2: 35.0
+      uplift3: 75.0
+eval:
+  out_dir: "./results"
+  max_tokens: 800
+  temperature: 0.2
+  categories:
+    - S1_Violent_Crime
+    - S6_Specialized_Advice
+    - S10_Hate
+    - S11_Self_Harm

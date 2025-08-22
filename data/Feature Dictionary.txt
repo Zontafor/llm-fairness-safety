@@ -1,0 +1,28 @@
+'ID'=Identification variable,
+'KIDSDRIV'=Number of driving children
+'AGE'=Age of driver
+'HOMEKIDS'=Number of children at home
+'YOJ'=Number of years employed at current job
+'INCOME'=Income of driver
+'PARENT1'=Driver is single parent
+'HOME_VAL'=Value of the driver's home
+'MSTATUS'=Marital status of driver
+'GENDER'=Gender of driver
+'EDUCATION'=Education of driver
+'OCCUPATION'=Occupation of driver
+'TRAVTIME'=Distance to work
+'CAR_USE'=How the driver uses the vehicle
+'BLUEBOOK'=Value of the vehicle
+'TIF'=How long the driver has been a customer
+'CAR_TYPE'=Type of vehicle
+'RED_CAR'=Is the vehicle red?
+'OLDCLAIM'=Total cost of claims over the past five years
+'CLM_FREQ'=Total number of claims in the past five years
+'REVOKED'=Has the driver's license been revoked in the last five years?
+'MVR_PTS'=Motor vehicle record points
+'CLM_AMT'=If the driver files a claim in the prediction window, what is the cost (one of the target variables)
+'CAR_AGE'=Age of the car
+'CLAIM_FLAG'=Whether the driver files a claim in the prediction window (one of the target variables)
+'URBANICITY'=Area where the driver lives or works
+
+

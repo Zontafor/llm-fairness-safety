@@ -1,0 +1,7 @@
+faiss-cpu
+sentence-transformers
+pandas
+numpy
+pyyaml
+requests
+tqdm

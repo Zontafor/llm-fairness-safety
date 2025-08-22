@@ -1,0 +1,39 @@
+# Rag Config // `rag_refined.py` is more refined but requires debugging
+corpus_dir: "./docs"
+manifest_path: "./docs/manifest.yaml"
+index_dir: "./rag_index"
+
+# Chunking
+chunk_chars: 900
+chunk_overlap: 150
+min_chunk_chars: 300
+
+# Embeddings: "lmstudio" | "sentencetransformers" | "fallback"
+embedding_backend: "lmstudio"
+sentencetransformers_model: "all-MiniLM-L6-v2"
+# For LM Studio embeddings, set env vars or put here:
+lmstudio_embed_url: null   # e.g., "http://localhost:1234/v1/embeddings"
+lmstudio_embed_model: null # e.g., "text-embedding-nomic-embed-text-v1"
+
+embedding_dim: 384
+
+# Indexing
+use_faiss: true
+normalize: true
+
+# Retrieval
+top_k: 6
+whitelist_source_types: ["compliance", "regulation", "fairness_audit"]
+whitelist_jurisdictions: ["US"]
+earliest_effective_date: "2018-01-01"
+keyword_boost: 0.15
+
+# Prompt
+max_prompt_tokens: 2800
+citation_style: "([{doc_id}:{chunk_id}] {title}, {effective_date})"
+
+# Safety
+blocked_patterns:
+  - "\\bhow\\s+to\\s+build\\s+a\\s+weapon\\b"
+  - "\\bchild\\s+sexual\\b"
+  - "\\bdo\\s+harm\\s+to\\b"

@@ -1,0 +1,18 @@
+project: "Project 5 - Toy LLM for Policy Recommendations"
+author: "Michelle L. Wu"
+components:
+  system_prompt: system_prompt.txt
+  rag_index:
+    config: rag_config.yaml
+    faiss: index.faiss
+    metadata: meta.json
+  evaluation:
+    summary: safety_eval_summary.txt
+    results: safety_eval.csv
+  datasets:
+    sample_customers: customers_sample.csv
+    insurance_data: insurance.csv
+  report: Project Update 5.pdf
+notes: >
+  Submission contains model instructions, RAG corpus, evaluation outputs, datasets,
+  and report.
