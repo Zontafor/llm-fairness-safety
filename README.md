@@ -1,6 +1,6 @@
 # llm-fairness-safety
 
-Standards, evaluations, and an IEEE-style paper for **LLM/ML fairness, safety, and governance** — including MetricFrame audits, ALERT/SALAD benchmarks, guardrails/refusal templates, and RAG configs.
+Standards, evaluations, and an IEEE-style paper for LLM/ML fairness, safety, and governance, including MetricFrame audits, ALERT/SALAD benchmarks, guardrails/refusal templates, and RAG configs. It is noted that the directory may not be the same as the README.md
 
 ## Contents
 - `paper/` — IEEE LaTeX (`main.tex`), `fig/`, `bib/`
