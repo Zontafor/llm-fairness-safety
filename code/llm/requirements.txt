@@ -1,0 +1,10 @@
+pandas
+scikit-lear
+numpy
+faiss-cpu
+sentence-transformers
+pypdf
+openai
+tqdm
+requests
+yaml
